@@ -2,8 +2,24 @@
 
 REST API для управления проектами и задачами. Laravel 12 + MySQL 9.1 + Docker.
 
-## Запуск
+## Установка
 
+### 1. Настройка окружения
+```bash
+copy .env.example .env
+```
+
+Файл `.env` уже настроен для Docker. Основные параметры:
+```env
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=projectcrud
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+### 2. Запуск
 ```bash
 docker-compose up -d --build
 ```
