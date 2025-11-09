@@ -19,8 +19,9 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-### 2. Запуск
+### 2. Установка и Запуск
 ```bash
+git clone https://github.com/Butyricoil/Laravel.testtask
 docker-compose up -d --build
 ```
 
