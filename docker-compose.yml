@@ -21,7 +21,7 @@ services:
     container_name: laravel_db
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: projectcrud
+      MYSQL_DATABASE: laraveltesktask
       MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: root
       MYSQL_USER: laravel

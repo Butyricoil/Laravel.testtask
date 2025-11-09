@@ -1,4 +1,4 @@
-# Project CRUD API
+# Laravel Test Task
 
 REST API для управления проектами и задачами. Laravel 12 + MySQL 9.1 + Docker.
 
@@ -14,7 +14,7 @@ copy .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
-DB_DATABASE=projectcrud
+DB_DATABASE=laraveltesktask
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
@@ -73,7 +73,7 @@ curl -X DELETE http://localhost:8000/api/projects/1
 
 ## Postman
 
-Импортируйте `ProjectCRUD.postman_collection.json` в Postman для готовых запросов.
+Импортируйте `laraveltesktask.postman_collection.json` в Postman для готовых запросов.
 
 ## Структура данных
 
