@@ -1,4 +1,4 @@
-FROM php:8.3-fpm
+FROM php:8.3-cli
 
 RUN apt-get update && apt-get install -y \
     git \
@@ -7,9 +7,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip \
-    nodejs \
-    npm
+    unzip
 
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
@@ -20,8 +18,6 @@ WORKDIR /var/www
 COPY . /var/www
 
 RUN composer install --no-interaction --optimize-autoloader --no-dev
-
-RUN npm install && npm run build
 
 RUN chown -R www-data:www-data /var/www
 
